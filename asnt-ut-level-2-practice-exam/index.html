@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ASNT UT Level II Practice Exam — 20 Free Ultrasonic Testing Questions</title>
+<meta name="description" content="20 free UT Level II practice questions with full rationale: sound-path calculations, calibration, angle-beam techniques, flaw detection, and API 1104.">
+<link rel="canonical" href="https://texas0418.github.io/cert-prep-site/asnt-ut-level-2-practice-exam/">
+<meta name="apple-itunes-app" content="app-id=6785204471">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--ink:#1a2333;--muted:#5b6678;--line:#e3e7ee;--bg:#f7f9fc;--card:#ffffff;
+--accent:#0b5fff;--accent-ink:#fff;--good:#0a7d33;--good-bg:#e9f7ee;--bad:#b3261e;--bad-bg:#fdeceb}
+body{font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+color:var(--ink);background:var(--bg)}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px}
+header.site{background:var(--card);border-bottom:1px solid var(--line);padding:14px 0}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{font-weight:700;text-decoration:none;color:var(--ink);font-size:17px}
+.brand span{color:var(--accent)}
+nav a{color:var(--muted);text-decoration:none;font-size:15px;margin-left:16px}
+nav a:hover{color:var(--ink)}
+.hero{padding:44px 0 28px}
+h1{font-size:32px;line-height:1.25;letter-spacing:-.02em;margin-bottom:12px}
+.hero p.lead{font-size:19px;color:var(--muted);max-width:56ch}
+.cta{display:inline-block;background:var(--accent);color:var(--accent-ink);text-decoration:none;
+font-weight:600;padding:12px 22px;border-radius:10px;margin-top:18px}
+.cta.secondary{background:var(--card);color:var(--accent);border:1px solid var(--accent)}
+.cta:hover{filter:brightness(1.08)}
+.badges{margin-top:10px;color:var(--muted);font-size:14px}
+main{padding-bottom:40px}
+.q{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin:18px 0}
+.q .tag{font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;margin-bottom:8px}
+.q h3{font-size:18px;line-height:1.45;margin-bottom:14px;font-weight:600}
+.opt{display:block;width:100%;text-align:left;font:inherit;background:var(--bg);color:var(--ink);
+border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin:8px 0;cursor:pointer}
+.opt:hover{border-color:var(--accent)}
+.q.done .opt{cursor:default;opacity:.85}
+.opt.correct{background:var(--good-bg);border-color:var(--good);color:var(--good);font-weight:600;opacity:1}
+.opt.wrong{background:var(--bad-bg);border-color:var(--bad);color:var(--bad);opacity:1}
+.expl{display:none;margin-top:12px;padding:12px 14px;background:var(--bg);border-left:3px solid var(--accent);
+border-radius:0 8px 8px 0;font-size:15.5px;color:var(--ink)}
+.expl .ref{color:var(--muted);font-size:14px;margin-top:4px}
+.q.done .expl{display:block}
+.score{position:sticky;bottom:0;background:var(--card);border-top:1px solid var(--line);padding:12px 0;
+margin-top:26px}
+.score .wrap{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.score b{font-size:17px}
+.midcta{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px;margin:26px 0;text-align:center}
+.midcta h2{font-size:22px;margin-bottom:8px}
+.midcta p{color:var(--muted);max-width:52ch;margin:0 auto}
+h2.sec{font-size:24px;margin:36px 0 6px}
+.faq{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:6px 22px;margin:14px 0}
+.faq details{padding:14px 0;border-bottom:1px solid var(--line)}
+.faq details:last-child{border-bottom:none}
+.faq summary{font-weight:600;cursor:pointer}
+.faq details p{margin-top:8px;color:var(--muted)}
+footer{border-top:1px solid var(--line);padding:26px 0 40px;color:var(--muted);font-size:14px}
+footer a{color:var(--muted)}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:22px 0}
+@media(max-width:640px){.cards{grid-template-columns:1fr}h1{font-size:26px}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;display:block;
+text-decoration:none;color:var(--ink)}
+.card:hover{border-color:var(--accent)}
+.card h3{font-size:19px;margin-bottom:6px}
+.card p{color:var(--muted);font-size:15.5px}
+.card .go{color:var(--accent);font-weight:600;margin-top:10px;display:inline-block}
+</style>
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="../index.html">Cert<span>Prep</span> Practice</a>
+  <nav>
+    <a href="../api-510-practice-questions/index.html">API 510</a>
+    <a href="../asnt-ut-level-2-practice-exam/index.html">UT Level II</a>
+  </nav>
+</div></header>
+
+<div class="hero"><div class="wrap">
+<h1>Free ASNT UT Level II Practice Exam Questions — Ultrasonic Testing</h1>
+<p class="lead">20 free practice questions for the ASNT UT Level II (conventional ultrasonic testing)
+written exam — sound-path and skip-distance calculations, physics, calibration, angle-beam techniques,
+flaw detection, and API 1104 acceptance basics. Tap an answer to check it and read the full rationale.</p>
+<a class="cta" href="https://apps.apple.com/us/app/ndt-cert-study/id6785204471">Get the full 355-question bank — free app</a>
+<div class="badges">iPhone &amp; iPad · timed mock exams · weak-topic-first review · imperial &amp; metric · offline</div>
+</div></div>
+<main><div class="wrap">
+
+<div class="q" data-answer="1">
+  <div class="tag">Question 1 · calculations</div>
+  <h3>A probe operates at 2.25 MHz in steel. What is the longitudinal wavelength?</h3>
+  <button class="opt" data-i="0">0.206 in</button><button class="opt" data-i="1">0.103 in</button><button class="opt" data-i="2">0.052 in</button><button class="opt" data-i="3">0.056 in</button>
+  <div class="expl"><b>Answer:</b> 0.103 in<br>Lambda = V / f using steel longitudinal 0.232 in/us: 0.232 / 2.25 = 0.103 in.</div>
+</div>
+<div class="q" data-answer="1">
+  <div class="tag">Question 2 · calculations</div>
+  <h3>A 2.25 MHz probe generates a shear wave in steel. What is the shear wavelength?</h3>
+  <button class="opt" data-i="0">0.103 in</button><button class="opt" data-i="1">0.056 in</button><button class="opt" data-i="2">0.113 in</button><button class="opt" data-i="3">0.028 in</button>
+  <div class="expl"><b>Answer:</b> 0.056 in<br>Lambda = V / f using steel shear 0.127 in/us: 0.127 / 2.25 = 0.056 in.</div>
+</div>
+<div class="q" data-answer="1">
+  <div class="tag">Question 3 · calculations</div>
+  <h3>A 5 MHz longitudinal probe is used in steel. What is the wavelength?</h3>
+  <button class="opt" data-i="0">0.103 in</button><button class="opt" data-i="1">0.046 in</button><button class="opt" data-i="2">0.025 in</button><button class="opt" data-i="3">0.093 in</button>
+  <div class="expl"><b>Answer:</b> 0.046 in<br>Lambda = 0.232 / 5 = 0.046 in.</div>
+</div>
+<div class="q" data-answer="2">
+  <div class="tag">Question 4 · physics</div>
+  <h3>Shear waves cannot propagate through:</h3>
+  <button class="opt" data-i="0">Solid steel sections</button><button class="opt" data-i="1">Any elastic solid</button><button class="opt" data-i="2">Liquids and gases</button><button class="opt" data-i="3">Aluminum and alloys</button>
+  <div class="expl"><b>Answer:</b> Liquids and gases<br>Liquids and gases have no shear stiffness, so they cannot sustain transverse (shear) waves.</div>
+</div>
+<div class="q" data-answer="0">
+  <div class="tag">Question 5 · physics</div>
+  <h3>The particle motion of a Rayleigh (surface) wave is:</h3>
+  <button class="opt" data-i="0">Elliptical</button><button class="opt" data-i="1">Longitudinal</button><button class="opt" data-i="2">Transverse</button><button class="opt" data-i="3">Uniform</button>
+  <div class="expl"><b>Answer:</b> Elliptical<br>Rayleigh waves move surface particles in an elliptical orbit combining longitudinal and transverse components.</div>
+</div>
+<div class="q" data-answer="0">
+  <div class="tag">Question 6 · physics</div>
+  <h3>A Rayleigh wave penetrates to a depth of approximately:</h3>
+  <button class="opt" data-i="0">One wavelength</button><button class="opt" data-i="1">Ten wavelengths</button><button class="opt" data-i="2">A thin skin only</button><button class="opt" data-i="3">The full thickness</button>
+  <div class="expl"><b>Answer:</b> One wavelength<br>Rayleigh wave energy concentrates within roughly one wavelength of the surface.</div>
+</div>
+<div class="q" data-answer="0">
+  <div class="tag">Question 7 · equipment</div>
+  <h3>Pulse repetition rate (PRR) is:</h3>
+  <button class="opt" data-i="0">The number of pulses the instrument transmits per second</button><button class="opt" data-i="1">The number of cycles per second of the crystal&#x27;s vibration</button><button class="opt" data-i="2">The time duration of each individual transmitted pulse</button><button class="opt" data-i="3">The rate at which the screen image is redrawn per second</button>
+  <div class="expl"><b>Answer:</b> The number of pulses the instrument transmits per second<br>PRR is how many separate ultrasonic pulses are fired each second.</div>
+</div>
+<div class="q" data-answer="0">
+  <div class="tag">Question 8 · equipment</div>
+  <h3>A B-scan presents:</h3>
+  <button class="opt" data-i="0">A cross-sectional (side) view showing reflector depth versus probe position</button><button class="opt" data-i="1">A plan top-down map of reflector position taken across the entire scanned area</button><button class="opt" data-i="2">A single waveform plotting echo amplitude against elapsed travel time</button><button class="opt" data-i="3">A digital numeric readout giving the remaining wall thickness value</button>
+  <div class="expl"><b>Answer:</b> A cross-sectional (side) view showing reflector depth versus probe position<br>A B-scan builds a side-view profile of the part, mapping depth against scan position.</div>
+</div>
+<div class="q" data-answer="0">
+  <div class="tag">Question 9 · calibration</div>
+  <h3>A distance-sensitivity calibration (DSC) block is used to:</h3>
+  <button class="opt" data-i="0">Calibrate distance and sensitivity for angle-beam inspection</button><button class="opt" data-i="1">Calibrate distance and sensitivity for straight-beam work only</button><button class="opt" data-i="2">Improve the coupling between the probe and a rough test surface</button><button class="opt" data-i="3">Set the pulser output voltage that drives the transducer</button>
+  <div class="expl"><b>Answer:</b> Calibrate distance and sensitivity for angle-beam inspection<br>The DSC block combines distance and sensitivity references for angle-beam setup.</div>
+</div>
+<div class="q" data-answer="0">
+  <div class="tag">Question 10 · calibration</div>
+  <h3>A calibration block should be made of material that:</h3>
+  <button class="opt" data-i="0">Has acoustic properties similar to the part being tested</button><button class="opt" data-i="1">Is always aluminum, whatever the part material happens to be</button><button class="opt" data-i="2">Has acoustic properties the opposite of those in the part</button><button class="opt" data-i="3">Matches only the surface hardness of the test piece</button>
+  <div class="expl"><b>Answer:</b> Has acoustic properties similar to the part being tested<br>Velocity, attenuation, and surface condition of the block should match the test piece for valid calibration.</div>
+</div>
+<div class="midcta">
+  <h2>335 more questions in the app</h2>
+  <p>NDT Cert Study has the full SME-reviewed UT Level II bank with an explanation for every answer
+  choice, timed mock exams with per-topic breakdowns, and a review system that serves your weakest
+  topics first. Free to download.</p>
+  <a class="cta" href="https://apps.apple.com/us/app/ndt-cert-study/id6785204471">Download free on the App Store</a>
+</div>
+
+<div class="q" data-answer="0">
+  <div class="tag">Question 11 · calibration</div>
+  <h3>Straight-beam range calibration is commonly performed using:</h3>
+  <button class="opt" data-i="0">Multiple back-wall echoes from a known thickness or a step block</button><button class="opt" data-i="1">A single side-drilled hole peaked at one known fixed depth</button><button class="opt" data-i="2">The reject control turned up until the baseline grass clears</button><button class="opt" data-i="3">A surface-wave probe timed across the top block face</button>
+  <div class="expl"><b>Answer:</b> Multiple back-wall echoes from a known thickness or a step block<br>Back-wall multiples from a known thickness give evenly spaced echoes to calibrate the sweep.</div>
+</div>
+<div class="q" data-answer="0">
+  <div class="tag">Question 12 · techniques</div>
+  <h3>On an A-scan, a lamination in plate is typically indicated by:</h3>
+  <button class="opt" data-i="0">A reduced back-wall echo with an intermediate echo from the lamination</button><button class="opt" data-i="1">A taller than normal back-wall echo plus an extra echo from the lamination</button><button class="opt" data-i="2">No change at all to the usual single back-wall echo seen on screen</button><button class="opt" data-i="3">A widening of the main bang spike at the far left of the sweep</button>
+  <div class="expl"><b>Answer:</b> A reduced back-wall echo with an intermediate echo from the lamination<br>The lamination reflects sound early, raising an intermediate echo at its own depth (often near mid-wall in rolled plate, but wherever the lamination lies) and stealing energy from the back wall.</div>
+</div>
+<div class="q" data-answer="0">
+  <div class="tag">Question 13 · techniques</div>
+  <h3>The back-reflection (loss of back wall) technique detects flaws by:</h3>
+  <button class="opt" data-i="0">Noting a drop in back-wall amplitude when sound is intercepted by a flaw</button><button class="opt" data-i="1">Reading the refracted wedge angle off the scale each time the flaw is crossed</button><button class="opt" data-i="2">Watching the couplant temperature climb the moment the beam meets a flaw</button><button class="opt" data-i="3">Measuring the height of the main bang spike at the start of the sweep</button>
+  <div class="expl"><b>Answer:</b> Noting a drop in back-wall amplitude when sound is intercepted by a flaw<br>A flaw that blocks or scatters the beam reduces the back-wall echo, signaling its presence.</div>
+</div>
+<div class="q" data-answer="0">
+  <div class="tag">Question 14 · techniques</div>
+  <h3>Welds are commonly inspected with angle-beam probes because:</h3>
+  <button class="opt" data-i="0">Weld flaws are often not parallel to the surface and the crown blocks straight-beam access</button><button class="opt" data-i="1">Angle-beam scanning simply covers the entire weld much faster than any straight beam can</button><button class="opt" data-i="2">Straight beams cannot pass through carbon steel weld metal at all in order to reach flaws</button><button class="opt" data-i="3">Angle-beam probes work fully dry and need no couplant at all on the weld surface</button>
+  <div class="expl"><b>Answer:</b> Weld flaws are often not parallel to the surface and the crown blocks straight-beam access<br>Angle beams reach the fusion faces and root at favorable angles and scan from beside the reinforcement.</div>
+</div>
+<div class="q" data-answer="0">
+  <div class="tag">Question 15 · flaw detection</div>
+  <h3>A lamination is best described as:</h3>
+  <button class="opt" data-i="0">A planar separation in the base metal lying parallel to the surface</button><button class="opt" data-i="1">A sharp crack running straight across the thickness of the plate</button><button class="opt" data-i="2">A cluster of rounded gas pores trapped down within the weld bead metal</button><button class="opt" data-i="3">A pocket of trapped slag sitting deep inside the weld volume</button>
+  <div class="expl"><b>Answer:</b> A planar separation in the base metal lying parallel to the surface<br>Laminations are flat, base-metal separations parallel to the rolling surface, found with straight-beam testing.</div>
+</div>
+<div class="q" data-answer="0">
+  <div class="tag">Question 16 · flaw detection</div>
+  <h3>Porosity typically produces:</h3>
+  <button class="opt" data-i="0">Many small, scattered, lower-amplitude indications</button><button class="opt" data-i="1">A single sharp, high-amplitude planar indication</button><button class="opt" data-i="2">A complete loss of the front-surface echo from the part</button><button class="opt" data-i="3">No reflected sound at all back from the gas pores</button>
+  <div class="expl"><b>Answer:</b> Many small, scattered, lower-amplitude indications<br>Gas pores act as numerous small reflectors, giving a scattered, low-level response.</div>
+</div>
+<div class="q" data-answer="0">
+  <div class="tag">Question 17 · flaw detection</div>
+  <h3>Slag inclusions are generally:</h3>
+  <button class="opt" data-i="0">Irregular volumetric reflectors with variable amplitude</button><button class="opt" data-i="1">Flat, planar reflectors that give a steady amplitude</button><button class="opt" data-i="2">Volumetric reflectors all aligned in one fixed direction</button><button class="opt" data-i="3">Reflectors too weak to detect from any probe angle</button>
+  <div class="expl"><b>Answer:</b> Irregular volumetric reflectors with variable amplitude<br>Trapped slag forms irregular volumetric pockets that reflect sound from many directions with varying strength.</div>
+</div>
+<div class="q" data-answer="0">
+  <div class="tag">Question 18 · codes api1104</div>
+  <h3>Under API 1104, the acceptance criteria for a discontinuity are established by:</h3>
+  <button class="opt" data-i="0">The governing code, applied per the method and criteria it specifies</button><button class="opt" data-i="1">The inspector&#x27;s personal preference, set fresh for each weld examined</button><button class="opt" data-i="2">The pipe manufacturer&#x27;s own in-house standard for that pipe grade</button><button class="opt" data-i="3">The welding crew&#x27;s agreed view on the day the job is run</button>
+  <div class="expl"><b>Answer:</b> The governing code, applied per the method and criteria it specifies<br>Acceptance criteria are defined by the governing code and applied using the method and limits it specifies, not chosen by the operator, manufacturer, or crew.</div>
+</div>
+<div class="q" data-answer="0">
+  <div class="tag">Question 19 · codes api1104</div>
+  <h3>The alternative acceptance criteria in API 1104 generally require:</h3>
+  <button class="opt" data-i="0">Stress analysis and reliable flaw sizing to assess fitness for service</button><button class="opt" data-i="1">A simple visual check of the cap alone to judge fitness for service</button><button class="opt" data-i="2">A drop in scanning sensitivity so more of the borderline flaws pass</button><button class="opt" data-i="3">No need to know the pipe wall thickness at all during the assessment</button>
+  <div class="expl"><b>Answer:</b> Stress analysis and reliable flaw sizing to assess fitness for service<br>Fitness-for-service acceptance depends on stress levels, material toughness, and accurate flaw dimensions, so reliable sizing is essential.</div>
+</div>
+<div class="q" data-answer="0">
+  <div class="tag">Question 20 · general practice safety</div>
+  <h3>A UT technician working under API 1104 is responsible for:</h3>
+  <button class="opt" data-i="0">Performing the examination to the qualified procedure and reporting results accurately</button><button class="opt" data-i="1">Setting the accept and reject criteria himself for each weld he examines along the line</button><button class="opt" data-i="2">Approving the welding procedure himself before any production welding gets underway</button><button class="opt" data-i="3">Setting the operating pressure that the finished pipeline will carry in service</button>
+  <div class="expl"><b>Answer:</b> Performing the examination to the qualified procedure and reporting results accurately<br>The technician&#x27;s duty is faithful execution of the qualified procedure and honest, accurate reporting.</div>
+</div>
+<div class="score"><div class="wrap"><b id="scoreline">Tap answers to track your score</b>
+<a class="cta secondary" href="https://apps.apple.com/us/app/ndt-cert-study/id6785204471">Continue in the app →</a></div></div>
+<h2 class="sec">UT Level II exam FAQ</h2>
+<div class="faq">
+<details><summary>What's on the UT Level II written exam?</summary>
+<p>Employer-administered Level II exams under SNT-TC-1A typically include a general exam (UT physics,
+equipment, calibration, techniques) and a specific exam based on the employer's procedures and
+applicable codes. Content varies by employer and specification — always study to your written practice.</p></details>
+<details><summary>Are the calculation questions in imperial or metric?</summary>
+<p>Both. The app lets you toggle every dual-unit question between imperial and metric; the samples on
+this page use imperial units.</p></details>
+<details><summary>Is this an official ASNT resource?</summary>
+<p>No. These are independent practice questions reviewed by subject-matter reviewers. They are not
+actual exam questions, and this site is not affiliated with or endorsed by ASNT.</p></details>
+<details><summary>Does the app cover other NDT methods?</summary>
+<p>The architecture supports additional method modules (PT, MT, RT, PAUT and more) that roll out as
+their banks pass review — UT Level II conventional is the flagship module today.</p></details>
+</div>
+</div></main>
+<script type="application/ld+json">{"@context": "https://schema.org/", "@type": "Quiz", "name": "ASNT UT Level II Practice Exam Questions", "url": "https://texas0418.github.io/cert-prep-site/asnt-ut-level-2-practice-exam/", "hasPart": [{"@type": "Question", "eduQuestionType": "Multiple choice", "learningResourceType": "Practice problem", "name": "A probe operates at 2.25 MHz in steel. What is the longitudinal wavelength?", "suggestedAnswer": [{"@type": "Answer", "text": "0.206 in"}, {"@type": "Answer", "text": "0.052 in"}, {"@type": "Answer", "text": "0.056 in"}], "acceptedAnswer": {"@type": "Answer", "text": "0.103 in"}}, {"@type": "Question", "eduQuestionType": "Multiple choice", "learningResourceType": "Practice problem", "name": "A 2.25 MHz probe generates a shear wave in steel. What is the shear wavelength?", "suggestedAnswer": [{"@type": "Answer", "text": "0.103 in"}, {"@type": "Answer", "text": "0.113 in"}, {"@type": "Answer", "text": "0.028 in"}], "acceptedAnswer": {"@type": "Answer", "text": "0.056 in"}}, {"@type": "Question", "eduQuestionType": "Multiple choice", "learningResourceType": "Practice problem", "name": "A 5 MHz longitudinal probe is used in steel. What is the wavelength?", "suggestedAnswer": [{"@type": "Answer", "text": "0.103 in"}, {"@type": "Answer", "text": "0.025 in"}, {"@type": "Answer", "text": "0.093 in"}], "acceptedAnswer": {"@type": "Answer", "text": "0.046 in"}}, {"@type": "Question", "eduQuestionType": "Multiple choice", "learningResourceType": "Practice problem", "name": "Shear waves cannot propagate through:", "suggestedAnswer": [{"@type": "Answer", "text": "Solid steel sections"}, {"@type": "Answer", "text": "Any elastic solid"}, {"@type": "Answer", "text": "Aluminum and alloys"}], "acceptedAnswer": {"@type": "Answer", "text": "Liquids and gases"}}, {"@type": "Question", "eduQuestionType": "Multiple choice", "learningResourceType": "Practice problem", "name": "The particle motion of a Rayleigh (surface) wave is:", "suggestedAnswer": [{"@type": "Answer", "text": "Longitudinal"}, {"@type": "Answer", "text": "Transverse"}, {"@type": "Answer", "text": "Uniform"}], "acceptedAnswer": {"@type": "Answer", "text": "Elliptical"}}, {"@type": "Question", "eduQuestionType": "Multiple choice", "learningResourceType": "Practice problem", "name": "A Rayleigh wave penetrates to a depth of approximately:", "suggestedAnswer": [{"@type": "Answer", "text": "Ten wavelengths"}, {"@type": "Answer", "text": "A thin skin only"}, {"@type": "Answer", "text": "The full thickness"}], "acceptedAnswer": {"@type": "Answer", "text": "One wavelength"}}, {"@type": "Question", "eduQuestionType": "Multiple choice", "learningResourceType": "Practice problem", "name": "Pulse repetition rate (PRR) is:", "suggestedAnswer": [{"@type": "Answer", "text": "The number of cycles per second of the crystal's vibration"}, {"@type": "Answer", "text": "The time duration of each individual transmitted pulse"}, {"@type": "Answer", "text": "The rate at which the screen image is redrawn per second"}], "acceptedAnswer": {"@type": "Answer", "text": "The number of pulses the instrument transmits per second"}}, {"@type": "Question", "eduQuestionType": "Multiple choice", "learningResourceType": "Practice problem", "name": "A B-scan presents:", "suggestedAnswer": [{"@type": "Answer", "text": "A plan top-down map of reflector position taken across the entire scanned area"}, {"@type": "Answer", "text": "A single waveform plotting echo amplitude against elapsed travel time"}, {"@type": "Answer", "text": "A digital numeric readout giving the remaining wall thickness value"}], "acceptedAnswer": {"@type": "Answer", "text": "A cross-sectional (side) view showing reflector depth versus probe position"}}, {"@type": "Question", "eduQuestionType": "Multiple choice", "learningResourceType": "Practice problem", "name": "A distance-sensitivity calibration (DSC) block is used to:", "suggestedAnswer": [{"@type": "Answer", "text": "Calibrate distance and sensitivity for straight-beam work only"}, {"@type": "Answer", "text": "Improve the coupling between the probe and a rough test surface"}, {"@type": "Answer", "text": "Set the pulser output voltage that drives the transducer"}], "acceptedAnswer": {"@type": "Answer", "text": "Calibrate distance and sensitivity for angle-beam inspection"}}, {"@type": "Question", "eduQuestionType": "Multiple choice", "learningResourceType": "Practice problem", "name": "A calibration block should be made of material that:", "suggestedAnswer": [{"@type": "Answer", "text": "Is always aluminum, whatever the part material happens to be"}, {"@type": "Answer", "text": "Has acoustic properties the opposite of those in the part"}, {"@type": "Answer", "text": "Matches only the surface hardness of the test piece"}], "acceptedAnswer": {"@type": "Answer", "text": "Has acoustic properties similar to the part being tested"}}]}</script>
+
+<footer><div class="wrap">
+  <p>Independent study aids. Not affiliated with or endorsed by the American Petroleum Institute (API) or ASNT.
+  Always confirm current exam requirements with the certifying body.</p>
+  <p style="margin-top:8px">Apps: <a href="https://apps.apple.com/us/app/api-inspector-cert-prep/id6785875538">API Inspector Cert Prep</a> ·
+  <a href="https://apps.apple.com/us/app/ndt-cert-study/id6785204471">NDT Cert Study</a></p>
+</div></footer>
+<script>
+document.querySelectorAll('.q').forEach(function(q){
+  q.querySelectorAll('.opt').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      if(q.classList.contains('done')) return;
+      q.classList.add('done');
+      var ans = parseInt(q.dataset.answer,10);
+      var opts = q.querySelectorAll('.opt');
+      opts[ans].classList.add('correct');
+      var picked = parseInt(btn.dataset.i,10);
+      if(picked!==ans) btn.classList.add('wrong');
+      window.__score = window.__score||{right:0,total:0};
+      window.__score.total++; if(picked===ans) window.__score.right++;
+      var el=document.getElementById('scoreline');
+      if(el) el.textContent = window.__score.right+' / '+window.__score.total+' correct';
+    });
+  });
+});
+</script>
+</body>
+</html>

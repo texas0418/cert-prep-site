@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://texas0418.github.io/cert-prep-site/sitemap.xml

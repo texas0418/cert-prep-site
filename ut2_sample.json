@@ -1,0 +1,282 @@
+[
+ {
+  "id": "ut2-calc-004",
+  "topic": "calculations",
+  "difficulty": "medium",
+  "stem": "A probe operates at 2.25 MHz in steel. What is the longitudinal wavelength?",
+  "options": [
+   "0.206 in",
+   "0.103 in",
+   "0.052 in",
+   "0.056 in"
+  ],
+  "answer": 1,
+  "explanation": "Lambda = V / f using steel longitudinal 0.232 in/us: 0.232 / 2.25 = 0.103 in."
+ },
+ {
+  "id": "ut2-calc-015",
+  "topic": "calculations",
+  "difficulty": "medium",
+  "stem": "A 2.25 MHz probe generates a shear wave in steel. What is the shear wavelength?",
+  "options": [
+   "0.103 in",
+   "0.056 in",
+   "0.113 in",
+   "0.028 in"
+  ],
+  "answer": 1,
+  "explanation": "Lambda = V / f using steel shear 0.127 in/us: 0.127 / 2.25 = 0.056 in."
+ },
+ {
+  "id": "ut2-calc-016",
+  "topic": "calculations",
+  "difficulty": "medium",
+  "stem": "A 5 MHz longitudinal probe is used in steel. What is the wavelength?",
+  "options": [
+   "0.103 in",
+   "0.046 in",
+   "0.025 in",
+   "0.093 in"
+  ],
+  "answer": 1,
+  "explanation": "Lambda = 0.232 / 5 = 0.046 in."
+ },
+ {
+  "id": "ut2-phys-003",
+  "topic": "physics",
+  "difficulty": "medium",
+  "stem": "Shear waves cannot propagate through:",
+  "options": [
+   "Solid steel sections",
+   "Any elastic solid",
+   "Liquids and gases",
+   "Aluminum and alloys"
+  ],
+  "answer": 2,
+  "explanation": "Liquids and gases have no shear stiffness, so they cannot sustain transverse (shear) waves."
+ },
+ {
+  "id": "ut2-phys-004",
+  "topic": "physics",
+  "difficulty": "medium",
+  "stem": "The particle motion of a Rayleigh (surface) wave is:",
+  "options": [
+   "Elliptical",
+   "Longitudinal",
+   "Transverse",
+   "Uniform"
+  ],
+  "answer": 0,
+  "explanation": "Rayleigh waves move surface particles in an elliptical orbit combining longitudinal and transverse components."
+ },
+ {
+  "id": "ut2-phys-005",
+  "topic": "physics",
+  "difficulty": "medium",
+  "stem": "A Rayleigh wave penetrates to a depth of approximately:",
+  "options": [
+   "One wavelength",
+   "Ten wavelengths",
+   "A thin skin only",
+   "The full thickness"
+  ],
+  "answer": 0,
+  "explanation": "Rayleigh wave energy concentrates within roughly one wavelength of the surface."
+ },
+ {
+  "id": "ut2-equip-002",
+  "topic": "equipment",
+  "difficulty": "medium",
+  "stem": "Pulse repetition rate (PRR) is:",
+  "options": [
+   "The number of pulses the instrument transmits per second",
+   "The number of cycles per second of the crystal's vibration",
+   "The time duration of each individual transmitted pulse",
+   "The rate at which the screen image is redrawn per second"
+  ],
+  "answer": 0,
+  "explanation": "PRR is how many separate ultrasonic pulses are fired each second."
+ },
+ {
+  "id": "ut2-equip-005",
+  "topic": "equipment",
+  "difficulty": "medium",
+  "stem": "A B-scan presents:",
+  "options": [
+   "A cross-sectional (side) view showing reflector depth versus probe position",
+   "A plan top-down map of reflector position taken across the entire scanned area",
+   "A single waveform plotting echo amplitude against elapsed travel time",
+   "A digital numeric readout giving the remaining wall thickness value"
+  ],
+  "answer": 0,
+  "explanation": "A B-scan builds a side-view profile of the part, mapping depth against scan position."
+ },
+ {
+  "id": "ut2-cal-007",
+  "topic": "calibration",
+  "difficulty": "medium",
+  "stem": "A distance-sensitivity calibration (DSC) block is used to:",
+  "options": [
+   "Calibrate distance and sensitivity for angle-beam inspection",
+   "Calibrate distance and sensitivity for straight-beam work only",
+   "Improve the coupling between the probe and a rough test surface",
+   "Set the pulser output voltage that drives the transducer"
+  ],
+  "answer": 0,
+  "explanation": "The DSC block combines distance and sensitivity references for angle-beam setup."
+ },
+ {
+  "id": "ut2-cal-011",
+  "topic": "calibration",
+  "difficulty": "medium",
+  "stem": "A calibration block should be made of material that:",
+  "options": [
+   "Has acoustic properties similar to the part being tested",
+   "Is always aluminum, whatever the part material happens to be",
+   "Has acoustic properties the opposite of those in the part",
+   "Matches only the surface hardness of the test piece"
+  ],
+  "answer": 0,
+  "explanation": "Velocity, attenuation, and surface condition of the block should match the test piece for valid calibration."
+ },
+ {
+  "id": "ut2-cal-018",
+  "topic": "calibration",
+  "difficulty": "medium",
+  "stem": "Straight-beam range calibration is commonly performed using:",
+  "options": [
+   "Multiple back-wall echoes from a known thickness or a step block",
+   "A single side-drilled hole peaked at one known fixed depth",
+   "The reject control turned up until the baseline grass clears",
+   "A surface-wave probe timed across the top block face"
+  ],
+  "answer": 0,
+  "explanation": "Back-wall multiples from a known thickness give evenly spaced echoes to calibrate the sweep."
+ },
+ {
+  "id": "ut2-tech-002",
+  "topic": "techniques",
+  "difficulty": "medium",
+  "stem": "On an A-scan, a lamination in plate is typically indicated by:",
+  "options": [
+   "A reduced back-wall echo with an intermediate echo from the lamination",
+   "A taller than normal back-wall echo plus an extra echo from the lamination",
+   "No change at all to the usual single back-wall echo seen on screen",
+   "A widening of the main bang spike at the far left of the sweep"
+  ],
+  "answer": 0,
+  "explanation": "The lamination reflects sound early, raising an intermediate echo at its own depth (often near mid-wall in rolled plate, but wherever the lamination lies) and stealing energy from the back wall."
+ },
+ {
+  "id": "ut2-tech-003",
+  "topic": "techniques",
+  "difficulty": "medium",
+  "stem": "The back-reflection (loss of back wall) technique detects flaws by:",
+  "options": [
+   "Noting a drop in back-wall amplitude when sound is intercepted by a flaw",
+   "Reading the refracted wedge angle off the scale each time the flaw is crossed",
+   "Watching the couplant temperature climb the moment the beam meets a flaw",
+   "Measuring the height of the main bang spike at the start of the sweep"
+  ],
+  "answer": 0,
+  "explanation": "A flaw that blocks or scatters the beam reduces the back-wall echo, signaling its presence."
+ },
+ {
+  "id": "ut2-tech-006",
+  "topic": "techniques",
+  "difficulty": "medium",
+  "stem": "Welds are commonly inspected with angle-beam probes because:",
+  "options": [
+   "Weld flaws are often not parallel to the surface and the crown blocks straight-beam access",
+   "Angle-beam scanning simply covers the entire weld much faster than any straight beam can",
+   "Straight beams cannot pass through carbon steel weld metal at all in order to reach flaws",
+   "Angle-beam probes work fully dry and need no couplant at all on the weld surface"
+  ],
+  "answer": 0,
+  "explanation": "Angle beams reach the fusion faces and root at favorable angles and scan from beside the reinforcement."
+ },
+ {
+  "id": "ut2-flaw-001",
+  "topic": "flaw_detection",
+  "difficulty": "medium",
+  "stem": "A lamination is best described as:",
+  "options": [
+   "A planar separation in the base metal lying parallel to the surface",
+   "A sharp crack running straight across the thickness of the plate",
+   "A cluster of rounded gas pores trapped down within the weld bead metal",
+   "A pocket of trapped slag sitting deep inside the weld volume"
+  ],
+  "answer": 0,
+  "explanation": "Laminations are flat, base-metal separations parallel to the rolling surface, found with straight-beam testing."
+ },
+ {
+  "id": "ut2-flaw-002",
+  "topic": "flaw_detection",
+  "difficulty": "medium",
+  "stem": "Porosity typically produces:",
+  "options": [
+   "Many small, scattered, lower-amplitude indications",
+   "A single sharp, high-amplitude planar indication",
+   "A complete loss of the front-surface echo from the part",
+   "No reflected sound at all back from the gas pores"
+  ],
+  "answer": 0,
+  "explanation": "Gas pores act as numerous small reflectors, giving a scattered, low-level response."
+ },
+ {
+  "id": "ut2-flaw-003",
+  "topic": "flaw_detection",
+  "difficulty": "medium",
+  "stem": "Slag inclusions are generally:",
+  "options": [
+   "Irregular volumetric reflectors with variable amplitude",
+   "Flat, planar reflectors that give a steady amplitude",
+   "Volumetric reflectors all aligned in one fixed direction",
+   "Reflectors too weak to detect from any probe angle"
+  ],
+  "answer": 0,
+  "explanation": "Trapped slag forms irregular volumetric pockets that reflect sound from many directions with varying strength."
+ },
+ {
+  "id": "ut2-code-003",
+  "topic": "codes_api1104",
+  "difficulty": "medium",
+  "stem": "Under API 1104, the acceptance criteria for a discontinuity are established by:",
+  "options": [
+   "The governing code, applied per the method and criteria it specifies",
+   "The inspector's personal preference, set fresh for each weld examined",
+   "The pipe manufacturer's own in-house standard for that pipe grade",
+   "The welding crew's agreed view on the day the job is run"
+  ],
+  "answer": 0,
+  "explanation": "Acceptance criteria are defined by the governing code and applied using the method and limits it specifies, not chosen by the operator, manufacturer, or crew."
+ },
+ {
+  "id": "ut2-code-006",
+  "topic": "codes_api1104",
+  "difficulty": "medium",
+  "stem": "The alternative acceptance criteria in API 1104 generally require:",
+  "options": [
+   "Stress analysis and reliable flaw sizing to assess fitness for service",
+   "A simple visual check of the cap alone to judge fitness for service",
+   "A drop in scanning sensitivity so more of the borderline flaws pass",
+   "No need to know the pipe wall thickness at all during the assessment"
+  ],
+  "answer": 0,
+  "explanation": "Fitness-for-service acceptance depends on stress levels, material toughness, and accurate flaw dimensions, so reliable sizing is essential."
+ },
+ {
+  "id": "ut2-gen-001",
+  "topic": "general_practice_safety",
+  "difficulty": "medium",
+  "stem": "A UT technician working under API 1104 is responsible for:",
+  "options": [
+   "Performing the examination to the qualified procedure and reporting results accurately",
+   "Setting the accept and reject criteria himself for each weld he examines along the line",
+   "Approving the welding procedure himself before any production welding gets underway",
+   "Setting the operating pressure that the finished pipeline will carry in service"
+  ],
+  "answer": 0,
+  "explanation": "The technician's duty is faithful execution of the qualified procedure and honest, accurate reporting."
+ }
+]

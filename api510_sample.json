@@ -1,0 +1,302 @@
+[
+ {
+  "id": "c510-corr-0001",
+  "topic": "Calc \u2014 Corrosion rate",
+  "difficulty": "easy",
+  "ref": "API 510 7.1",
+  "stem": "A pressure vessel shell had an original thickness of 0.5 in. A thickness reading 8 years later is 0.38 in. What is the long-term corrosion rate?",
+  "options": [
+   "0.015 in/yr",
+   "0.03 in/yr",
+   "0.0475 in/yr",
+   "0.12 in/yr"
+  ],
+  "answer": 0,
+  "explanation": "Long-term corrosion rate = (t_initial \u2212 t_actual) / time = (0.5 \u2212 0.38) / 8 = 0.015 in/yr."
+ },
+ {
+  "id": "c510-rl-0001",
+  "topic": "Calc \u2014 Remaining life",
+  "difficulty": "medium",
+  "ref": "API 510 7.2",
+  "stem": "A vessel component measures t_actual = 0.360 in., with t_required = 0.150 in. and a corrosion rate of 0.012 in/yr. What is the remaining life?",
+  "options": [
+   "8.75 years",
+   "30 years",
+   "17.5 years",
+   "12.5 years"
+  ],
+  "answer": 2,
+  "explanation": "Remaining life = (t_actual - t_required) / corrosion rate = (0.360 - 0.150) / 0.012 = 17.5 years."
+ },
+ {
+  "id": "c510-rca-0001",
+  "topic": "Calc \u2014 Remaining corrosion allowance",
+  "difficulty": "easy",
+  "ref": "API 510 7.1",
+  "stem": "A component has an actual thickness of 0.445 in. and a required thickness of 0.3 in. What is the remaining corrosion allowance?",
+  "options": [
+   "0.745 in",
+   "0.3 in",
+   "0.2225 in",
+   "0.145 in"
+  ],
+  "answer": 3,
+  "explanation": "Remaining corrosion allowance = t_actual \u2212 t_required = 0.445 \u2212 0.3 = 0.145 in."
+ },
+ {
+  "id": "c510-int-0001",
+  "topic": "Calc \u2014 Inspection interval",
+  "difficulty": "medium",
+  "ref": "API 510 6.5",
+  "stem": "The remaining life of a vessel is calculated to be 12 years. Per API 510, the internal/on-stream inspection interval shall not exceed which value (assuming this governs and no RBI assessment is used)?",
+  "options": [
+   "6 years",
+   "12 years",
+   "3 years",
+   "24 years"
+  ],
+  "answer": 0,
+  "explanation": "API 510 limits the internal or on-stream inspection interval to the lesser of one-half the remaining life or 10 years. One-half of 12 = 6 years, which is less than 10, so 6 years governs."
+ },
+ {
+  "id": "c510-fca-0001",
+  "topic": "Calc \u2014 Future corrosion allowance",
+  "difficulty": "medium",
+  "ref": "API 510 7.5",
+  "stem": "A shell measures 0.5 in. with a corrosion rate of 0.01 in/yr. For an MAWP assessment covering the next 10-year interval, what thickness should be used (deduct the corrosion expected before the next inspection)?",
+  "options": [
+   "0.3 in",
+   "0.5 in",
+   "0.4 in",
+   "0.49 in"
+  ],
+  "answer": 2,
+  "explanation": "t_used = t_measured \u2212 (corrosion rate \u00d7 interval) = 0.5 \u2212 (0.01 \u00d7 10) = 0.4 in."
+ },
+ {
+  "id": "c510-sh-0001",
+  "topic": "Calc \u2014 Static head",
+  "difficulty": "easy",
+  "ref": "API 510 BOK I.A.3",
+  "stem": "A vessel part is located 35 ft below the liquid surface. Using the exam convention (specific gravity = 1.0), what is the static head pressure acting on that part?",
+  "options": [
+   "7.58 psi",
+   "35 psi",
+   "30.31 psi",
+   "15.15 psi"
+  ],
+  "answer": 3,
+  "explanation": "Static head = 0.433 psi/ft \u00d7 height \u00d7 SG = 0.433 \u00d7 35 \u00d7 1.0 = 15.15 psi."
+ },
+ {
+  "id": "c510-ip-0001",
+  "topic": "Calc \u2014 Internal pressure (shell)",
+  "difficulty": "hard",
+  "ref": "ASME VIII-1 UG-27(c)(1)",
+  "stem": "Determine the required thickness of a cylindrical shell for internal pressure (circumferential stress). P = 300 psi, inside radius R = 30 in., S = 17500 psi, E = 1.0. Use t = PR/(SE \u2212 0.6P).",
+  "options": [
+   "0.5143 in",
+   "0.5196 in",
+   "0.2576 in",
+   "0.509 in"
+  ],
+  "answer": 1,
+  "explanation": "t = PR/(SE \u2212 0.6P) = (300 \u00d7 30) / ((17500 \u00d7 1.0) \u2212 0.6 \u00d7 300) = 0.5196 in."
+ },
+ {
+  "id": "c510-iph-0001",
+  "topic": "Calc \u2014 Internal pressure (head)",
+  "difficulty": "hard",
+  "ref": "ASME VIII-1 UG-27(d) / UG-32(f)",
+  "stem": "Determine the required thickness of a hemispherical head: P = 400 psi, inside radius R = 30 in., S = 17500 psi, E = 1. Use t = PR/(2SE - 0.2P).",
+  "options": [
+   "0.3436 in",
+   "0.6953 in",
+   "0.6873 in",
+   "0.1718 in"
+  ],
+  "answer": 0,
+  "explanation": "t = PR/(2SE - 0.2P) = (400 x 30) / ((2 x 17500 x 1) - 0.2 x 400) = 0.3436 in. Using the cylinder formula (0.6953 in) is the common error; a hemi-head needs roughly half the thickness of a cylinder of equal radius."
+ },
+ {
+  "id": "c510-je-0001",
+  "topic": "Calc \u2014 Joint efficiency",
+  "difficulty": "medium",
+  "ref": "ASME VIII-1 UW-12, Table UW-12",
+  "stem": "A Type 1 (double-welded butt) longitudinal joint is fully radiographed. What joint efficiency E is used per Table UW-12?",
+  "options": [
+   "0.70",
+   "0.85",
+   "1.00",
+   "0.90"
+  ],
+  "answer": 2,
+  "explanation": "For a Type 1 joint with full radiography, Table UW-12 gives E = 1.00. Spot RT would give 0.85 and no RT 0.70."
+ },
+ {
+  "id": "c510-test-0001",
+  "topic": "Calc \u2014 Pressure testing",
+  "difficulty": "medium",
+  "ref": "ASME VIII-1 UG-99(b)",
+  "stem": "A vessel has an MAWP of 200 psi. Assuming the test-temperature and design-temperature allowable stresses are equal, what is the standard hydrostatic test pressure per current ASME VIII-1 (UG-99(b))?",
+  "options": [
+   "300 psi",
+   "200 psi",
+   "260 psi",
+   "220 psi"
+  ],
+  "answer": 2,
+  "explanation": "Standard hydrostatic test pressure = 1.3 \u00d7 MAWP \u00d7 (S_test/S_design). With the stress ratio = 1, = 1.3 \u00d7 200 = 260 psi. (The 1.5\u00d7 factor is the older pre-1999 basis.)"
+ },
+ {
+  "id": "c510-ws-0001",
+  "topic": "Calc \u2014 Weld sizing",
+  "difficulty": "easy",
+  "ref": "ASME VIII-1 UW-16 / API 510 BOK",
+  "stem": "A fillet weld has a required throat dimension of 0.35 in. Using the exam conversion factor of 0.7, what is the corresponding leg dimension?",
+  "options": [
+   "0.5 in",
+   "0.2 in",
+   "0.3 in",
+   "0.7 in"
+  ],
+  "answer": 0,
+  "explanation": "Throat = 0.7 \u00d7 leg, so leg = throat / 0.7 = 0.35 / 0.7 = 0.5 in."
+ },
+ {
+  "id": "a510-resp-0001",
+  "topic": "API 510 \u2014 Responsibilities",
+  "difficulty": "easy",
+  "ref": "API 510 4.2",
+  "stem": "Per API 510, who has overall responsibility for the in-service inspection program, including compliance with the code?",
+  "options": [
+   "The organization performing repairs",
+   "The jurisdiction having authority",
+   "The owner/user of the equipment",
+   "The authorized inspection agency"
+  ],
+  "answer": 2,
+  "explanation": "API 510 assigns overall responsibility for the inspection, repair, alteration, and rerating program to the owner/user."
+ },
+ {
+  "id": "a510-scope-0001",
+  "topic": "API 510 \u2014 Scope",
+  "difficulty": "easy",
+  "ref": "API 510 1.1",
+  "stem": "API 510 applies primarily to which equipment?",
+  "options": [
+   "In-service vessels: inspection, rating, repair, alteration",
+   "New pressure vessels during original code construction",
+   "Atmospheric and low-pressure bulk storage tank shells",
+   "Buried and aboveground process piping circuit systems"
+  ],
+  "answer": 0,
+  "explanation": "API 510 covers in-service pressure vessels \u2014 inspection, rating, repair, and alteration. New construction is covered by the construction code (e.g., ASME VIII)."
+ },
+ {
+  "id": "a510-mawp-0001",
+  "topic": "API 510 \u2014 Rating",
+  "difficulty": "medium",
+  "ref": "API 510 7.5",
+  "stem": "When establishing the MAWP for an existing pressure vessel, which thickness should be used in the calculation?",
+  "options": [
+   "The original nominal thickness from the U-1 data report",
+   "Actual thickness less corrosion before the next inspection",
+   "The minimum thickness value stamped on the nameplate",
+   "The as-fabricated thickness at the heaviest shell course"
+  ],
+  "answer": 1,
+  "explanation": "Rerating/MAWP determinations use the actual measured thickness minus the corrosion allowance that will be lost before the next inspection date."
+ },
+ {
+  "id": "a510-rerate-0001",
+  "topic": "API 510 \u2014 Rerating",
+  "difficulty": "medium",
+  "ref": "API 510 8.1",
+  "stem": "A vessel may be rerated to a different MAWP only when which condition is met?",
+  "options": [
+   "Informal verbal approval is obtained from the owner/user",
+   "The vessel has been in service for more than ten years",
+   "Calculations to the construction code, fully documented",
+   "A pressure test is substituted for the rating calculation"
+  ],
+  "answer": 2,
+  "explanation": "Rerating requires calculations per the applicable construction code, documentation, and (typically) updating the nameplate; it is performed by or with the manufacturer/engineer per API 510."
+ },
+ {
+  "id": "a510-cml-0001",
+  "topic": "API 510 \u2014 CMLs",
+  "difficulty": "medium",
+  "ref": "API 510 5.6",
+  "stem": "Condition monitoring locations (CMLs) are best described as:",
+  "options": [
+   "Locations where pressure-relief devices are installed",
+   "Zones reserved exclusively for welded repair activity",
+   "Points established only for recording nameplate data",
+   "Designated areas monitored for damage and thickness"
+  ],
+  "answer": 3,
+  "explanation": "CMLs are designated areas on a vessel where inspections (often thickness readings) are taken to monitor the presence and rate of damage."
+ },
+ {
+  "id": "a510-insp-0001",
+  "topic": "API 510 \u2014 Inspection types",
+  "difficulty": "easy",
+  "ref": "API 510 6.3",
+  "stem": "An external inspection of an in-service vessel can typically be performed:",
+  "options": [
+   "Only when shut down, opened, and entered",
+   "While the vessel remains on-stream",
+   "Only during the hydrostatic pressure test",
+   "Only by a representative of the jurisdiction"
+  ],
+  "answer": 1,
+  "explanation": "External inspections are generally on-stream activities; internal inspections require the vessel to be shut down and opened."
+ },
+ {
+  "id": "a510-insp-0002",
+  "topic": "API 510 \u2014 Inspection intervals",
+  "difficulty": "medium",
+  "ref": "API 510 6.4",
+  "stem": "The external inspection interval for most pressure vessels is not to exceed:",
+  "options": [
+   "Not to exceed one year under any circumstance",
+   "Fixed at ten years regardless of the service",
+   "Not to exceed five years (or next internal)",
+   "Set at twenty years for all external surfaces"
+  ],
+  "answer": 2,
+  "explanation": "API 510 generally limits external inspection intervals to 5 years (or the next internal/on-stream inspection, if sooner)."
+ },
+ {
+  "id": "a510-rbi-0001",
+  "topic": "API 510 \u2014 RBI",
+  "difficulty": "medium",
+  "ref": "API 510 6.2 / API 580",
+  "stem": "When a risk-based inspection (RBI) assessment is used to set inspection intervals, API 510 requires that it be:",
+  "options": [
+   "Performed only once and never revisited later",
+   "Limited strictly to external visual inspection",
+   "Reviewed and approved by the welder of record",
+   "Documented and updated at the set interval"
+  ],
+  "answer": 3,
+  "explanation": "RBI assessments must be documented and reassessed/updated periodically and when conditions change (per API 510 referencing API 580)."
+ },
+ {
+  "id": "a510-repair-0001",
+  "topic": "API 510 \u2014 Repairs/alterations",
+  "difficulty": "medium",
+  "ref": "API 510 3.1",
+  "stem": "Which of the following is, by definition, an ALTERATION rather than a repair?",
+  "options": [
+   "Replacing a section with identical material",
+   "A change beyond the original design basis",
+   "Re-welding a cracked attachment weld",
+   "Touch-up of an external protective coating"
+  ],
+  "answer": 1,
+  "explanation": "An alteration changes the vessel from its original design (e.g., adding a nozzle, increasing MAWP). A repair restores the vessel to a safe operating condition without such a change."
+ }
+]
