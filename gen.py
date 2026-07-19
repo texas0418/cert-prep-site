@@ -121,6 +121,7 @@ def page(title, desc, canonical_path, app_id, body):
 <title>{html.escape(title)}</title>
 <meta name="description" content="{html.escape(desc)}">
 <link rel="canonical" href="https://texas0418.github.io/cert-prep-site{canonical_path}">
+<meta name="google-site-verification" content="YW7uUkw2l_VQy3eMgVtYelKT14MrHSl70VHYWL93Fjg">
 <meta name="apple-itunes-app" content="app-id={app_id}">
 <style>{CSS}</style>
 </head>
