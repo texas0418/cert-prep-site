@@ -1,0 +1,13 @@
+# Generated output. The site deploys by rsync from dist/, not from this repo.
+dist/
+dist-*/
+magnets/
+__pycache__/
+
+# PAID CONTENT, NEVER COMMIT. This repo is PUBLIC.
+# data/bank_iso9712_pack.json is the 371-question bank behind the $27.99 ISO 9712
+# paperback. The API and ASNT banks are safe only because they live in other repos
+# and are read by absolute path. build.py falls back to data/<filter> for the ISO
+# pack, so a clean clone cannot build that one page until the bank is placed here
+# by hand. That is deliberate.
+data/

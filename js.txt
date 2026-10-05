@@ -1,0 +1,18 @@
+
+document.querySelectorAll('.q').forEach(function(q){
+  q.querySelectorAll('.opt').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      if(q.classList.contains('done')) return;
+      q.classList.add('done');
+      var ans = parseInt(q.dataset.answer,10);
+      var opts = q.querySelectorAll('.opt');
+      opts[ans].classList.add('correct');
+      var picked = parseInt(btn.dataset.i,10);
+      if(picked!==ans) btn.classList.add('wrong');
+      window.__score = window.__score||{right:0,total:0};
+      window.__score.total++; if(picked===ans) window.__score.right++;
+      var el=document.getElementById('scoreline');
+      if(el) el.textContent = window.__score.right+' / '+window.__score.total+' correct';
+    });
+  });
+});
